@@ -1,5 +1,6 @@
 package steps;
 import core.Driver;
+import enums.Hobbie;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Quando;
 import pages.RegisterPage;
@@ -27,16 +28,16 @@ public class RegisterSteps {
 
 	}
 	@Quando("os campos do formulario estao preenchidos com dados validos")
-	public void osCamposDoFormularioEstaoPreenchidosComDadosValidos(){
+	public void osCamposDoFormularioEstaoPreenchidosComDadosValidos() throws Exception {
 		registerPage.setAddres("rua mauro")
 				.setEmail("hugoleo@gmail")
 				.setPhone("456789545")
 				.clickMale()
-				//.clickHobbies("Movies")
-				//.clickHobbies("Hockey")
-				//.selectLanguages("English")
+				.clickHobbies(Hobbie.MOVIES)
+				.clickHobbies(Hobbie.HOCKEY)
+				.selectLanguages("English")
 				.selectSkills("Java")
-				//.selectCountry("Brazil")
+				//.selectCountry("Select Country")
 				.selectCountryDois("Australia")
 				.selectYear("1988")
 				.selectMonth("October")
