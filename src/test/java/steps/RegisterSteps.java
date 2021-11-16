@@ -37,7 +37,6 @@ public class RegisterSteps {
 				.clickHobbies(Hobbie.HOCKEY)
 				.selectLanguages("English")
 				.selectSkills("Java")
-				//.selectCountry("Select Country")
 				.selectCountryDois("Australia")
 				.selectYear("1988")
 				.selectMonth("October")

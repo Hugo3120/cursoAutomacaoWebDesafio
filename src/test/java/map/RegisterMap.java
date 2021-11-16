@@ -19,8 +19,7 @@ public class RegisterMap {
 	public Element inpuLanguages = new Element(ByValue.CSS,"#msdd");
 	public Element languages = new Element(ByValue.CSS, "a.ui-corner-all");
 	public Element skills = new Element(ByValue.CSS, "#Skills");
-	public Element country = new Element(ByValue.CSS, "#select2-country-container");
-	public Element countryDois= new Element(ByValue.CSS, "#country");
+	public Element country = new Element(ByValue.CSS, "#country");
 	public Element year = new Element(ByValue.CSS, "#yearbox");
 	public Element month = new Element(ByValue.CSS, "select[ng-model=monthbox]");
 	public Element day = new Element(ByValue.CSS, "#daybox");

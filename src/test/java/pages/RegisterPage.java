@@ -66,16 +66,10 @@ public class RegisterPage {
 		return  this;
 	}
 
-	public RegisterPage selectCountry(String value){
+	public RegisterPage selectCountryDois(String value) throws InterruptedException {
 		registerMap.country.select(value);
 		return  this;
 	}
-
-	public RegisterPage selectCountryDois(String value){
-		registerMap.countryDois.select(value);
-		return  this;
-	}
-
 	public RegisterPage selectYear(String value){
 		registerMap.year.select(value);
 		return  this;
@@ -96,9 +90,8 @@ public class RegisterPage {
 		return  this;
 	}
 
-	public RegisterPage setConfirmPassword (CharSequence... value){
+	public void setConfirmPassword (CharSequence... value) throws InterruptedException {
 		registerMap.confirmPassword.sendKeys(value);
-		return  this;
 	}
 	public RegisterPage setUpload (CharSequence... value){
 		registerMap.upload.sendKeys(value);
